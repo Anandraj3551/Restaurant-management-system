@@ -1,0 +1,140 @@
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'poppins', sans-serif;
+        box-sizing: border-box;
+    }
+    
+    .main {
+        min-height: 100vh;
+        width: 100%;
+        background-position: center;
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://www.coreldraw.com/static/cdgs/images/pages/seo/tips/photo/basics/blur-background/blur-background.jpg);
+        background-size: cover;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+    
+    .logo {
+        text-decoration: none;
+        font-size: 25px;
+        font-weight: bold;
+        color: orangered;
+        padding-right: 25%;
+    }
+    
+    .img1 {
+        cursor: pointer;
+        padding-left: 10%;
+    }
+    
+    .nav-links {
+        text-align: right;
+        background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnZ5RDumMhJUDvqAIgWc-j9FZVXsB7yPFSGw&usqp=CAU);
+        padding: 30px 40px;
+        border-bottom-left-radius: 18px;
+    }
+    
+    .nav-links ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 10px 25px;
+    }
+    
+    .nav-links ul li a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 15px;
+    }
+    
+    .nav-links ul li::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: red;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+    
+    .nav-links ul li:hover::after {
+        width: 100%;
+    }
+    
+    .row {
+        background-color: rgba(0, 0, 0, 0.315);
+        width: 80%;
+        margin: 4% auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        color: white;
+    }
+    
+    .col {
+        flex-basis: 25%;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .col img {
+        width: 60%;
+        cursor: pointer;
+        transition: 1s;
+    }
+    
+    .col p {
+        margin: 20px 0;
+    }
+    
+    .social-links .fab {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        border: 1px solid black;
+        border-radius: 10px;
+        margin: 0 7px;
+        cursor: pointer;
+        transition: transform .5s;
+    }
+    
+    .fa-facebook {
+        color: rgba(0, 81, 255, 0.932);
+    }
+    
+    .fa-linkedin-in {
+        color: yellow;
+    }
+    
+    .fa-instagram {
+        color: purple;
+    }
+    
+    .social-links .fab:hover {
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnZ5RDumMhJUDvqAIgWc-j9FZVXsB7yPFSGw&usqp=CAU);
+        color: white;
+        transform: translateY(-7px);
+    }
+    
+    .col:hover img {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    
+    .col span {
+        width: 0;
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-right: 15px solid rgba(0, 0, 0, 0.801);
+        position: absolute;
+        top: 50%;
+        right: 20%;
+        transform: translateY(-40%);
+        z-index: 2;
+    }

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="reserv.css">
+</head>
+
+<body class="header">
+
+    <nav>
+        <div class="img1">
+            <a href="home.html"> <img src="assets/logo.png" alt="" height="100px" width="120px">
+            </a>
+        </div>
+        <a href="#" class="logo">North Indian Resturant </a>
+
+        <div class="nav-links">
+            <ul>
+                <li>
+                    <a href="home.html">HOME</a>
+                </li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+
+                <li><a href="aboutus.html">ABOUT US</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="hero">
+        <form>
+            <div class="row">
+                <div class="input-group">
+                    <input type="text" id="name" required>
+                    <label for="name">Your Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" id="number" required>
+                    <label for="number">Phone No.</label>
+                </div>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" required>
+                <label for="email">Email Id</label>
+            </div>
+            <div class="input-group">
+                <input type="date" id="date" required>
+                <label for="date"></label>
+            </div>
+            <div class="input-group">
+                <input type="time" id="time" required>
+                <label for="time"></label>
+            </div>
+            <div class="input-group">
+                <input type="number" id="people" required min="1" max="12">
+                <label for="people">No. of people(Max 12)</label>
+            </div>
+            <div class="input-group">
+                <textarea id="message" rows="8" required></textarea>
+                <label for="message">Your order </label>
+            </div>
+            <div class="btn">
+                <button type="submit">Book a Table</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.main {
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://www.coreldraw.com/static/cdgs/images/pages/seo/tips/photo/basics/blur-background/blur-background.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: orangered;
+    padding-right: 25%;
+}
+
+.img1 {
+    cursor: pointer;
+    padding-left: 10%;
+}
+
+.nav-links {
+    text-align: right;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnZ5RDumMhJUDvqAIgWc-j9FZVXsB7yPFSGw&usqp=CAU);
+    padding: 30px 40px;
+    border-bottom-left-radius: 18px;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+.nav-links ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: red;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.box {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, .1);
+    line-height: 0;
+}
+
+.box>img {
+    width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover;
+    transition: .5s;
+}
+
+.box>span {
+    font-size: 3.8vh;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+}
+
+.box:hover {
+    flex: 1 1 50%;
+}
+
+.box:hover>img {
+    width: 100%;
+    height: 100%;
+}
